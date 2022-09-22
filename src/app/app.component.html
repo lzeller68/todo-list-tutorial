@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Page</span>
+    <span class="example-spacer"></span>
+    <button mat-button (click)="onClickNavigateAddTodo()">
+      Hinzufügen
+    </button>
+    <button mat-button (click)="onClickNavigateAllTodos()">
+      Alle Todos
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

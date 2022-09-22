@@ -1,0 +1,8 @@
+<div class="div-container">
+  <mat-form-field appearance="fill" color="primary">
+    <mat-label>Titel</mat-label>
+    <input matInput [(ngModel)]="todoItem.name">
+  </mat-form-field>
+  <mat-checkbox [(ngModel)]="todoItem.isComplete" >Fertiggestellt?</mat-checkbox>
+  <button mat-raised-button color="primary" (click)="onClickAddTodo()">Hinzufügen</button>
+</div>

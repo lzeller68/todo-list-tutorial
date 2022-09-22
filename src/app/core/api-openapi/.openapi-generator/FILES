@@ -1,0 +1,16 @@
+.gitignore
+README.md
+api.module.ts
+api/api.ts
+api/todoItems.service.ts
+api/weatherForecast.service.ts
+configuration.ts
+encoder.ts
+git_push.sh
+index.ts
+model/models.ts
+model/todoItem.ts
+model/todoItemDTO.ts
+model/weatherForecast.ts
+param.ts
+variables.ts
