@@ -28,6 +28,8 @@ export class TodoComponent implements OnInit {
   }
 
   onCheckboxChanged(todo: TodoItemDTO) {
-    this.store.dispatch(TodoActions.changeTodoStatus({todo}));
+    let todoClone = Object.assign({}, todo);
+    todoClone.isComplete = !todoClone.isComplete;
+    this.store.dispatch(TodoActions.changeTodoStatus({todo: todoClone}));
   }
 }

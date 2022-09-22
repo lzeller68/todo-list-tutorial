@@ -37,7 +37,6 @@ export const changeTodoStatus = createAction(
 
 export const changeTodoStatusSuccess = createAction(
   '[Todo] Change Todo Status Success',
-  props<{todo: TodoItemDTO}>()
 );
 
 export const changeTodoStatusFailure = createAction(

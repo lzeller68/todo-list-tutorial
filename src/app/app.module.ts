@@ -12,6 +12,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {ApiModule, Configuration} from "./core/api-openapi";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,12 @@ import {MatIconModule} from "@angular/material/icon";
     EffectsModule.forRoot([]),
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    ApiModule.forRoot(() => {
+      return new Configuration({
+        basePath: 'https://localhost:7073'
+      })
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

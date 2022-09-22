@@ -9,7 +9,6 @@ encoder.ts
 git_push.sh
 index.ts
 model/models.ts
-model/todoItem.ts
 model/todoItemDTO.ts
 model/weatherForecast.ts
 param.ts

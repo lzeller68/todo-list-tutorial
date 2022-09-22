@@ -69,21 +69,25 @@ export const reducer = createReducer(
     on(TodoActions.changeTodoStatus, (state, action) => {
       return {
         ...state,
-        currentTodo: state.currentTodo
+        currentTodo: state.currentTodo,
+        isLoading: true
       }
     }),
 
-  on(TodoActions.changeTodoStatusSuccess, (state, action) => {
-    return {
-      ...state,
-    }
-  }),
+    on(TodoActions.changeTodoStatusSuccess, (state, action) => {
+      console.log('LOAD TODOS')
+      return {
+        ...state,
+        isLoading: false,
+      }
+    }),
 
-  on(TodoActions.changeTodoStatusFailure, (state, action) => {
-    return {
-      ...state,
-      error: action.error
-    }
-  }),
+    on(TodoActions.changeTodoStatusFailure, (state, action) => {
+      return {
+        ...state,
+        isLoading: false,
+        error: action.error
+      }
+    }),
   )
 ;

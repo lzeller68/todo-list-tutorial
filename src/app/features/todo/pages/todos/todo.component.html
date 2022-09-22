@@ -1,6 +1,6 @@
 <mat-list>
   <mat-list-item *ngFor="let todo of todos$ | async">
-    <mat-checkbox (change)="onCheckboxChanged(todo)" [(ngModel)]="todo.isComplete">{{todo.name}}</mat-checkbox>
+    <mat-checkbox (change)="onCheckboxChanged(todo)" [ngModel]="todo.isComplete">{{todo.name}}</mat-checkbox>
   </mat-list-item>
 </mat-list>
 
