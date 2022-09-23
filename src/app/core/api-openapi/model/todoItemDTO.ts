@@ -15,5 +15,6 @@ export interface TodoItemDTO {
     id?: number;
     name?: string | null;
     isComplete?: boolean;
+    description?: string | null;
 }
 

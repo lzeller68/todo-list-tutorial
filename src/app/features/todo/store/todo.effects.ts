@@ -46,7 +46,7 @@ export class TodoEffects {
 
   changeTodoSuccess$ = createEffect(() => {
     return this.actions$.pipe(
-      ofType(TodoActions.changeTodoStatus),
+      ofType(TodoActions.changeTodoStatusSuccess),
       map(() => TodoActions.loadTodos())
     )
   })

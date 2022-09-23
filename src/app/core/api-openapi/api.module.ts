@@ -3,7 +3,6 @@ import { Configuration } from './configuration';
 import { HttpClient } from '@angular/common/http';
 
 import { TodoItemsService } from './api/todoItems.service';
-import { WeatherForecastService } from './api/weatherForecast.service';
 
 @NgModule({
   imports:      [],
